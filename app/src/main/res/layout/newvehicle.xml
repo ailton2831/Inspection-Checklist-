@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".Carros.NewvehicleActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matricula"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinner_ilha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/restomatricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o resto da matricula (0000/00XX/XX00)"
+            android:inputType="textCapCharacters"
+            android:maxLength="4"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marca"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/inputMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a marca do carro"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modelo"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/inputModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a modelo do carro"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proprietário"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/inputProp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o proprietário do carro"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ano de Matricula"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/inputAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite ano de matricula do carro"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo"
+            android:textSize="20sp"
+            android:background="@drawable/card2"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/RadioG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/radioLP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Ligeiro Particular" />
+            <RadioButton
+                android:id="@+id/radioLTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Ligeiro Transporte Publico" />
+            <RadioButton
+                android:id="@+id/radioP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Pesado" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonAdicionarCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#3B82F6"
+            android:minHeight="48dp"
+            android:text="adicionar veiculo"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
